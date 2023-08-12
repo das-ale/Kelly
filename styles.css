@@ -1,32 +1,53 @@
+body {
+    margin:0;
+}
+
 header {
-    background-color: aqua;
+    background-color: #f1666dcc;
     display: flex;
     flex-flow: row, wrap;
     justify-content: space-between;
     align-items: center;
+    width: 100vw;
 }
 
 #enlace {
     color: black;
+    font-family: Bricolage Grotesque;
+    text-decoration: none;
 }
+
 nav {
+    display: flex;
+    width: 25vw;
+    justify-content: flex-end;
+    gap: 13px;
     margin-right: 2%;
 }
 
 #titulo {
-    margin-left:2%;
+
+    font-family: "Sofia";
+    font-size: 40px;
+    line-height: 15px;
+    text-decoration-line:underline;
+    margin-left: 1%;
 }
 
 main {
     display: flex;
     justify-content:space-between;
     align-items: center;
+    margin-top:10px;
+    background-color: #ff9ea2;
+    margin-top: 0;
+    width: 100vw;
 }
 
 #info {
     max-width: 50%;
-    font-variant: small-caps;
     text-align: justify;
+    margin-left: 1%;
 }
 
 #galeria {
@@ -34,6 +55,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    max-width: 50vw;
 }
 
 .row {
@@ -43,8 +65,27 @@ main {
     flex-wrap: wrap;
 }
 
+#nombre {
+    font-family: Great Vibes;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+#parrafos {
+    font-family: Sofia Sans;
+    font-size: 20px;
+}
+
 img {
     border-radius: 20px;
-    border: 4px solid pink;
+    margin: 5px;
     object-fit: cover;
+    outline: 130px solid rgba(0, 0, 0, 0.445);
+    outline-offset:-130px;
+    transition:0.5s;
+}
+
+img:hover {
+    outline: 4px solid pink;
+    outline-offset: 5px;
 }
