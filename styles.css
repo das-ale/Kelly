@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    background-color: #f1666dcc;
+    background-color: rgba(241, 102, 109, 0.8);
     display: flex;
     flex-flow: row, wrap;
     justify-content: space-between;
@@ -14,7 +14,31 @@ header {
 #enlace {
     color: black;
     font-family: Bricolage Grotesque;
-    text-decoration: none;
+    font-size: 19px;
+    background: linear-gradient(
+            to right, 
+            rgba(0, 0, 0, 1), 
+            rgba(0, 0, 0, 1)
+        ),
+        linear-gradient(
+            to right,
+            rgba(255, 255, 255, 1),
+            rgba(255, 255, 255, 1)
+        );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: 100% 100%, 100% 100%;
+    background-size: 100% 100%, 0% 100%;
+    background-repeat: no-repeat;
+    transition: 300ms;
+}
+
+#enlace:hover {
+    background-size: 0% 0%, 100% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 nav {
@@ -88,4 +112,19 @@ img {
 img:hover {
     outline: 4px solid pink;
     outline-offset: 5px;
+}
+
+a {
+    background-color: linear-gradient (
+            to right, 
+            rgba(100, 200, 200, 1), 
+            rgba(100, 200, 200, 1)
+        ),
+        linear-gradient (
+            to right,
+            rgba(255, 0, 0, 0.5),
+            rgba(255, 0, 180, 0.5),
+            rgba(0, 100, 200, 0.5)
+        )
+            ;
 }
