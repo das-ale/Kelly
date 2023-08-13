@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    background-color: rgba(241, 102, 109, 0.8);
+    background-color: rgba(220, 20, 60, 0.651);
     display: flex;
     flex-flow: row, wrap;
     justify-content: space-between;
@@ -11,10 +11,7 @@ header {
     width: 100vw;
 }
 
-#enlace {
-    color: black;
-    font-family: Bricolage Grotesque;
-    font-size: 19px;
+#transicion {
     background: linear-gradient(
             to right, 
             rgba(0, 0, 0, 1), 
@@ -28,14 +25,14 @@ header {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-position: 100% 100%, 100% 100%;
+    background-position: 100% 100%, 0% 100%;
     background-size: 100% 100%, 0% 100%;
     background-repeat: no-repeat;
-    transition: 300ms;
+    transition: 400ms;
 }
 
-#enlace:hover {
-    background-size: 0% 0%, 100% 100%;
+#transicion:hover {
+    background-size: 0% 100%, 100% 100%;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -63,7 +60,7 @@ main {
     justify-content:space-between;
     align-items: center;
     margin-top:10px;
-    background-color: #ff9ea2;
+    background-color: rgb(255, 158, 162);
     margin-top: 0;
     width: 100vw;
 }
@@ -100,7 +97,7 @@ main {
     font-size: 20px;
 }
 
-img {
+.cuadro {
     border-radius: 20px;
     margin: 5px;
     object-fit: cover;
@@ -109,22 +106,48 @@ img {
     transition:0.5s;
 }
 
-img:hover {
+.cuadro:hover {
     outline: 4px solid pink;
     outline-offset: 5px;
 }
 
 a {
-    background-color: linear-gradient (
-            to right, 
-            rgba(100, 200, 200, 1), 
-            rgba(100, 200, 200, 1)
-        ),
-        linear-gradient (
-            to right,
-            rgba(255, 0, 0, 0.5),
-            rgba(255, 0, 180, 0.5),
-            rgba(0, 100, 200, 0.5)
-        )
-            ;
+    color: black;
+    font-family: Bricolage Grotesque;
+    font-size: 19px;
+}
+
+.final {
+    display:flex;
+    justify-content: space-between;
+    background-color: rgba(255, 158, 161, 0.842);
+
+}
+
+.quote_box {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen_maria_antonieta {
+    width: 40vw;
+}
+
+img {
+    border-radius:10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.quote_final {
+    align-self: flex-end;
+    margin-right: 25%;
+}
+
+.quote {
+    font-size:40px;
+    font-family: Dancing Script;
 }
